@@ -21,6 +21,8 @@ public class SpringDataJpaApplication {
     public CommandLineRunner run(EmployeeRepository repository) {
         return (args) -> {
             System.out.println(repository.findEmployeeByLastNameContaining(" "));
+            System.out.println(repository.findAll());
+
         };
     }
 }
