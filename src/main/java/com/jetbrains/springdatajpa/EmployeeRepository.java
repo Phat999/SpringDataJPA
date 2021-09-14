@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface EmployeeRepository extends CrudRepository<Employee, Long> {
     List<Employee> findEmployeeByLastNameContaining(String str);
-    
+    List<Employee> findEmployeeByFirstName(String str);
 }
